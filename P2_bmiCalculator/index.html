@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#F8F8F8] text-[#363636] flex w-full h-[95vh] justify-center items-center"
+  >
+    <div
+      class="flex flex-col items-center text-center max-w-xs px-5 py-4 border-2 border-[#363636] rounded-xl"
+    >
+      <h1 class="text-2xl font-bold mb-4">BMI Calculator</h1>
+      <form class="flex flex-col gap-2">
+        <p>
+          <label>Height (cm): </label
+          ><input
+            type="text"
+            id="height"
+            class="rounded-full focus:outline-[#363636] text-sm text-center leading-6 border border-gray-300"
+          />
+        </p>
+        <p>
+          <label>Weight (Kg): </label
+          ><input
+            type="text"
+            id="weight"
+            class="rounded-full focus:outline-[#363636] text-sm text-center leading-6 border border-gray-300"
+          />
+        </p>
+        <div class="flex justify-end mt-1">
+          <button
+            class="bg-[#363636] hover:opacity-90 text-[#F8F8F8] py-1 px-3 rounded-full"
+          >
+            Calculate
+          </button>
+        </div>
+      </form>
+      <div>
+        <p id="result" class="text-2xl font-semibold">0</p>
+        <p id="status" class="text-sm">Fill in your height and weight.</p>
+      </div>
+    </div>
+  </body>
+  <script src="bmiCalculator.js"></script>
+</html>

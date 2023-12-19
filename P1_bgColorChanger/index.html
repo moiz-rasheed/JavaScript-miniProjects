@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F8F8F8] flex w-full h-screen justify-center">
+    <div
+      class="bg-[#F8F8F8] flex flex-col gap-2 items-center text-center absolute bottom-4 text-[#363636] max-w-xs px-4 pt-2 pb-3 border-2 border-[#363636] rounded-xl"
+    >
+      <h1 class="font-bold">Background Color Changer</h1>
+      <div class="flex gap-2">
+        <span
+          class="button bg-[#363636] p-8 border-2 border-[#363636] rounded-md cursor-pointer"
+          id="black"
+        ></span>
+        <span
+          class="button bg-[#DC2F2F] p-8 border-2 border-[#363636] rounded-md cursor-pointer"
+          id="red"
+        ></span>
+        <span
+          class="button bg-[#FF894C] p-8 border-2 border-[#363636] rounded-md cursor-pointer"
+          id="orange"
+        ></span>
+        <span
+          class="button bg-[#F8F8F8] p-8 border-2 border-[#363636] rounded-md cursor-pointer"
+          id="white"
+        ></span>
+      </div>
+      <p class="text-sm">
+        Try clicking on one of the colors above to change the background color
+        of this page!
+      </p>
+    </div>
+  </body>
+  <script src="bgColorChanger.js"></script>
+</html>
